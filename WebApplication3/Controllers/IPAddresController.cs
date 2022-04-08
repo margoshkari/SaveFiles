@@ -75,7 +75,7 @@ namespace WebApplication3.Controllers
                             {
                                 name = reader["FileName"].ToString();
                                 var bytes = reader["IpAddres"];
-                                ip = Encoding.Unicode.GetString((byte[])bytes);
+                                ip = Encoding.UTF8.GetString((byte[])bytes);
                             }
                         }
                     }
